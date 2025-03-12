@@ -1,64 +1,98 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Thành viên</title>
-        <style>
-            body{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .khung{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 50px;
-                text-align: center;
-                max-width: 1200px;
-            }
-            .anh{
-                width: 300px;
-            }
-
-            .anh img{
-                width: 100%;
-                height: 300px;
-                object-fit: cover;
-            }
-            .anh p{
-                font-size: 30px;
-                font-weight: bold;
-                margin-top: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="khung">
-            <div class="anh">
-                <img src="https://i.postimg.cc/xCmT2qBB/ceb5f63f43f3f2adabe2.jpg" alt="Lê Thảo Vân">
-                <p>Lê Thảo Vân</p>
-            </div>
-            <div class="anh">
-                <img src="https://i.postimg.cc/jSksnzbG/9484260093cc22927bdd.jpg" alt="Vũ Hoàng Phi Khanh">
-                <p>Vũ Hoàng Phi Khanh</p>
-            </div>
-            <div class="anh">
-                <img src="https://i.postimg.cc/QNkhJLDg/5e7b05cbb00701595816.jpg" alt="Đoàn Thị Thanh Nga">
-                <p>Đoàn Thị Thanh Nga</p>
-            </div>
-            <div class="anh">
-                <img src="https://i.postimg.cc/PqgT2TNy/6035e7985254e30aba45.jpg" alt="Nguyễn Trần Trúc Lam">
-                <p>Nguyễn Trần Trúc Lam</p>
-            </div>
-            <div class="anh">
-                <img src="https://i.postimg.cc/3xLwjsgf/de4c67e1d22d63733a3c.jpg" alt="Đỗ Lê Bích Ngọc">
-                <p>Đỗ Lê Bích Ngọc</p>
-            </div>
-            <div class="anh">
-                <img src="https://i.postimg.cc/W4kPDCSk/5bc15b59dc956dcb3484.jpg" alt="Trần Khánh Hưng">
-                <p>Trần Khánh Hưng</p>
-            </div>
-        </div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Thành viên</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            border: 1px solid black;
+        }
+        td {
+            border: 1px solid black;
+            font-size: 35px;
+            padding: 10px;
+            text-align: center;
+        }
+        td:first-child {
+            width: 500px;
+        }
+        td:last-child {
+            width: 100%;
+            white-space: nowrap;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .trangchu {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            padding: 15px 0;
+        }
+        .trangchu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
+        }
+        .trangchu a:hover {
+            text-decoration: underline;
+        }
+        .anh {
+            height: 500px; 
+            width: 500px; 
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="trangchu">
+        <a href="">Trang chủ</a>
+        <a href="https://noname1267.github.io/Thi12a2thanhvien/">Thành viên</a>
+        <a href="https://noname1267.github.io/Thi12a2vinpearl/">Hoạt động</a>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <img src="https://i.postimg.cc/xCmT2qBB/ceb5f63f43f3f2adabe2.jpg" class="anh">
+            </td>
+            <td>Lê Thảo Vân</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://i.postimg.cc/jSksnzbG/9484260093cc22927bdd.jpg" class="anh">
+            </td>
+            <td>Vũ Hoàng Phi Khanh</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://i.postimg.cc/QNkhJLDg/5e7b05cbb00701595816.jpg" class="anh">
+            </td>
+            <td>Đoàn Thị Thanh Nga</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://i.postimg.cc/PqgT2TNy/6035e7985254e30aba45.jpg" class="anh">
+            </td>
+            <td>Nguyễn Trần Trúc Lam</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://i.postimg.cc/3xLwjsgf/de4c67e1d22d63733a3c.jpg" class="anh">
+            </td>
+            <td>Đỗ Lê Bích Ngọc</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://i.postimg.cc/W4kPDCSk/5bc15b59dc956dcb3484.jpg" class="anh">
+            </td>
+            <td>Trần Khánh Hưng</td>
+        </tr>
+    </table>
+</body>
 </html>
